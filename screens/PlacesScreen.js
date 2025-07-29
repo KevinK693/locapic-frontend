@@ -12,7 +12,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useDispatch, useSelector } from 'react-redux';
 import { addPlace, removePlace } from '../reducers/user';
 
-const BACKEND_ADDRESS = 'http://BACKEND_IP:3000';
+const BACKEND_ADDRESS = process.env.EXPO_PUBLIC_BACKEND_URL;
 
 export default function PlacesScreen() {
   const dispatch = useDispatch();
