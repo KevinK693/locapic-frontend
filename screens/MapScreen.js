@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Modal, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Modal, StyleSheet, Text, TextInput, TouchableOpacity, View ,SafeAreaView} from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { addPlace, importPlaces } from '../reducers/user';
 import MapView, { Marker } from 'react-native-maps';
